@@ -1,1 +1,240 @@
 /* Insert your styles here */
+body {
+     background: url("../media/images-a2/lindt-background3.jpg") no-repeat fixed center center;
+      background-size: cover;
+    /* background: #744b0e; */
+    /* background-repeat: no-repeat; */
+}
+
+header {
+top: 0;
+/* position: sticky;  */
+width: 100%;
+}
+
+nav {
+    z-index: 0;
+}
+
+
+#Lindt-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-width: 20%;
+    min-width: 200px;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-self: top;
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    
+    background-color: black;
+
+}
+
+li {
+    float: left;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: rgb(168, 159, 73);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Dancing Script";
+    font-size: x-large;
+    font-weight: 200;
+}
+
+li a:hover {
+    background-color: #797070;
+}
+
+main {
+    background:  rgb(255, 255, 255, 0.6);
+    width: 60%;
+     min-width: 300px; 
+    /* width: 40%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Dancing Script";
+    text-shadow: 1px 0 0 black;
+    color: rgb(165, 154, 59);
+}
+
+p.paragraph {
+    font-size: 30px;
+    font-family: "Dancing Script";
+    color: rgb(82, 64, 4);
+}
+
+
+
+footer {
+    bottom: 0;
+    font-size: 10pt;
+    text-align: center;
+    text-shadow: 2px 0 0 black;
+    /* border: 4px solid rgb(100, 84, 48);  */
+    background-color: rgba(228, 164, 91, 0.6);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.01vw;
+    font-family: "Indie Flower";
+  
+    color: rgb(255, 255, 255);
+    }
+
+span.fancy {
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+
+     /* background-color: #2196F3; */
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color: rgba(126, 116, 73, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px #b4b365;
+    text-align: center;
+
+  }
+
+img.item {
+   width: 300px;
+   border: 2px solid rgb(88, 81, 40);
+   transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+ @media screen and (max-width:1225px) { 
+    .grid-container {
+        grid-template-columns: auto;
+
+    }
+    img.item {
+        width: 100%;
+    }
+ } 
+
+ .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .grid-item:hover .item {
+    opacity: 0.3;
+  }
+  .grid-item:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: rgba(185, 167, 107, 0.8);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  
+  .description {
+      font-size: 13vw;
+  }
+
+  .darker { 
+      font-size: 2vw;
+      color: rgb(41, 31, 7);
+      font-family: "Dancing Script";
+  }
+  .Login-info{
+    text-align: left;
+  }
+
+  #Assorted-Lindor {
+      width: 30%;
+      float: left;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+label{
+    font-size : 2vw;
+}
+#total {
+    color: black;
+}
+#error {
+    display: none;
+}
+div.section {
+    margin-right: 0;
+    right: 0;
+}
+
+.Login-info{
+    font-family: "Cinzel";
+    font-weight: bolder;
+}
+#Login-Title {
+    font-family: "Indie Flower";
+    text-align: center;
+}
+#Required-field{
+    color: red;
+    font-family: "Cinzel";
+    font-weight: bolder;
+    font-size : 11px;
+}
+#Email{
+    width: 250px;
+    height: 25px;
+}
+#Password{
+    width: 250px;
+    height: 25px;
+}
+.Login-Button{
+    width: 150px;
+}
