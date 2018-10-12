@@ -1,51 +1,74 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <title>Assignment 3</title>
 
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-    <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
-    <script src='../wireframe.js'></script>
-    <style>
-      <?php
-        // This PHP code inserts CSS to style the "current page" link in the nav area
-        $here = $_SERVER['SCRIPT_NAME']; 
-        $bits = explode('/',$here); 
-        $filename = $bits[count($bits)-1]; 
-        echo "nav a[href$='$filename'] {
-        box-shadow: 1px 1px 1px 2px navy;
-      }";
-      ?>
-      
-    </style>
-  </head>
+<!-- <!DOCTYPE html>
+<html> -->
+<!-- <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lindt| Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <nav>
+            <ul>
+                    <li><a href="https://titan.csit.rmit.edu.au/~s3722599/wp/a2/index.php">Home</a></li>
+                    <li><a href="https://titan.csit.rmit.edu.au/~s3722599/wp/a2/products.php">Products</a></li>
+                    <li><a href="https://titan.csit.rmit.edu.au/~s3722599/wp/a2/login.php">Login</a></li> 
+                    <li><a href= "../Assignment2-5/index.php">Home</a></li>
+                    <li><a href="https://titan.csit.rmit.edu.au/~s3722599/wp/a2/products.php">Products</a></li>
+                    <li><a href="https://titan.csit.rmit.edu.au/~s3722599/wp/a2/login.php">Login</a></li>
 
-  <body>
+            </ul>
+        </nav>       
+    <br><br>
+    <div id="logodiv">
+        <img id ="Lindt-logo" src ="../Assignment2-5/images/lindt-logo.png" alt="Lindt Logo">
+    </div>
+    </header> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <main> -->
+<?php
+    session_start();
+    include_once('tools.php');
+    topModule('Lindt| Homepage');
+    ?>
+    <div class="content">      
+        <img id ="chocolatier1" src ="../../media/images-a2/Banners-Lindt-Roger-Maitre-Chocolatier.jpg" alt="chocolatier1">
+        <p>Maître Chocolatier Suisse Depuis 1845</p>
+        <p class="paragraph">The Lindt brand with its extensive and innovative global and local range of finest quality chocolate is present in around 120 countries worldwide.
+                        Lindt chocolates are known worldwide for their incomparable, unique taste and fine melting texture. The creation of such fine chocolate is an art that requires profound expertise, long-lasting experience and dedication for uncompromised quality.
+                        The Lindt Maîtres Chocolatiers are masters of this art. They have developed and refined their unique secret recipes, driven by their unmatched standard for chocolate quality and their passion for creative excellence. They start with the selection of fine raw materials and high quality ingredients, and culminate in exquisite creations that delight young and old.
+                        From smooth melting Lindor, to the thin, refined elegance of an Excellence bar and from the iconic Lindt Gold Bunny, to exquisite praline masterpieces, Lindt Maîtres Chocolatiers take pride in creating a chocolate experience like no other.</p>    
+    </div>
 
-    <header>
-      <div>Put company logo and name here</div>
-    </header>
-
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
-
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
+    <div class="content">
+        <img id ="excellence" src ="../../media/images-a2/lindt-background3.jpg" alt="excellence">
+        <p>Excellence- A symbol of perfection</p>
+        <p class="paragraph">Back in the 1980’s Lindt had a pioneering role in shaping the market of dark chocolate with the launch of its innovative extra-thin Excellence bar. It is designed to melt quickly, releasing exquisite tastes and aromas, and to give way to a unique, elegant mouth feel. From the complex (the dark cocoa percentage range), to the experimental (the dark ingredients range), more than 300 million bars are enjoyed worldwide every year.</p>
+    </div>
+ 
+    <div class="content">      
+            <img id ="chocolatier" src ="../../media/images-a2/Lindt-chocolatier-1.jpg" alt="chocolatier">
+        <p>Lindor- The smooth creation by LINDT</p>
+        <p class="paragraph">The smooth-melting Lindor recipe was created by the Lindt Maîtres Chocolatiers in 1949 in Switzerland. The real secret of its success is the perfect, uniform consistency of the filling and how to achieve it. That could only be truly honoured with gold and the Maîtres Chocolatiers combined the name “Lindt”, with the French word for gold “or”.Every minute around 7000 Lindor balls are consumed around the world.</p>    
+    </div>
+    <div class="content">
+            <img id ="bunny" src ="../../media/images-a2/Lindt-Gold-Bunny.jpg" alt="bunny">
+            <p>Gold Bunny- The iconic of easter for more than 60 years</p>
+            <p class="paragraph">As one of the most traditional Lindt products, the Gold Bunny first opened his eyes to the world of chocolate in 1952. People of all ages and all over the world know, spring is not far away when the Gold Bunny appears again with his characteristic bell around its neck. Today the Gold Bunny is available in four different flavours and comes in six sizes, from 10 grams up to one kilogram.</p>
+        </div>
+ 
     </main>
+    
+ 
+</body>
+<?php
 
-    <footer>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
-   
-  </body>
+    bottomModule();
+    printMyCode();
+    ?>
 </html>

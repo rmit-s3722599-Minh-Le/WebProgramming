@@ -1,1 +1,393 @@
-/* Insert your styles here */
+html {
+     background-image: url("../../../media/images-a2/lindt-background3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center; 
+    /* background: #744b0e; */
+    /* background-repeat: no-repeat; */
+}
+
+body {
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+li a:link, a:visited {
+
+}
+li a:hover, a:active {
+    
+}
+
+header {
+top: 0;
+/* position: sticky;  */
+width: 100%;
+}
+
+nav {
+    z-index: 0;
+}
+
+
+#Lindt-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-width: 20%;
+    min-width: 200px;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-self: top;
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    
+    background-color: black;
+
+}
+
+li {
+    float: left;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: rgb(168, 159, 73);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Dancing Script";
+    font-size: x-large;
+    font-weight: 200;
+}
+
+li a:hover {
+    background-color: #797070;
+}
+
+main {
+    background:  hsla(0, 0%, 100%, 0.9);
+    width: 60%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Dancing Script";
+    text-shadow: 1px 0 0 black;
+    color: rgb(165, 154, 59);
+}
+
+p.paragraph {
+    font-size: 28px;
+    font-family: "Crimson Text";
+    color: rgb(56, 43, 2);
+    padding-bottom: 3rem;
+}
+
+
+
+footer {
+    bottom: 0;
+    position: absolute;
+    font-size: 10pt;
+    text-align: center;
+    text-shadow: 2px 0 0 black;
+    /* border: 4px solid rgb(100, 84, 48);  */
+    background-color: rgba(228, 164, 91, 0.6);
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    font-family: "Indie Flower";
+  
+    color: rgb(255, 255, 255);
+    }
+
+span.fancy {
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+
+     /* background-color: #2196F3; */
+    padding: 10px;
+  }
+
+
+ .grid-item {
+    background-color: rgba(126, 116, 73, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px #b4b365;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  
+img.item {
+   width: 300px;
+   border: 2px solid rgb(88, 81, 40);
+   transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+ @media screen and (max-width:1225px) { 
+    .grid-container {
+        grid-template-columns: auto;
+
+    }
+    img.item {
+        width: 100%;
+    }
+ } 
+
+ .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .grid-item:hover .item {
+    opacity: 0.3;
+  }
+  .grid-item:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: rgba(233, 229, 216, 1);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  
+  .description {
+      font-size: 13vw;
+  }
+
+  .darker { 
+      font-size: 2vw;
+      color: rgb(2, 1, 0);
+      font-family: "Dancing Script";
+  }
+  #Assorted-Lindor {
+      width: 30%;
+      float: left;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+label{
+    font-size : 2vw;
+}
+#total {
+    color: black;
+}
+#error {
+    display: none;
+}
+div.section {
+    display: inline block;
+    align-content: right;
+    margin-right: 0;
+    right: 0;
+}
+
+div.con {
+    text-align: center;
+}
+
+.Login-info{
+    font-family: "Cinzel";
+    font-weight: bolder;
+    text-align: left;
+}
+#Login-Title {
+    font-family: "Indie Flower";
+    text-align: center;
+}
+#Required-field{
+    color: red;
+    font-family: "Cinzel";
+    font-weight: bolder;
+    font-size : 11px;
+}
+#Email{
+    width: 250px;
+    height: 25px;
+}
+#Password{
+    width: 250px;
+    height: 25px;
+}
+.Login-Button{
+    width: 150px;
+}
+#Purchase{
+    width: 150px;
+    height: 50px;
+}
+
+#error {
+    font-size: 20px;
+    font-family: "Cinzel";
+}
+#cart_table {
+    padding: 4%;
+    width: 100%;
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+#cart_table th {  
+    background: rgb(173, 157, 157); /* Light grey background */
+    height: 30px;
+    font-weight: bold; /* Make sure they're bold */
+}
+#cart_table td {
+    background: rgb(241, 241, 202);
+}
+#cart_table, #cart_table th, #cart_table td {
+    border: 1px solid black;
+   text-align: center;
+}
+div.cart_buttons {
+    text-align: center; 
+    
+}
+.abutton {
+    display: inline-block;
+}
+
+div.block {
+text-align: center;
+padding-bottom: 1rem;
+}
+
+div.miniblock {
+    /* display: inline-block; */
+    text-align: left;
+    align-content: right;
+}
+div.miniblock #nameinput {
+   margin-right: 0;
+   /* text-align: center; */
+}
+.miniblock label {
+   padding-inline-end: 30px;
+}
+.miniblock input {
+    width: 250px;
+    height: 25px;
+}
+
+p.error101 {
+    display: inline;
+    color: red;
+}
+
+div.error102 {
+    display: inline;
+    color: red;
+}
+
+#Visa-Logo {
+    display: none;
+    width: 5vw;
+}
+
+
+pre {
+    background-color: hsl(210, 7%, 71%)
+}
+#Reciepttable {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-left:0%; 
+    margin-right:70%;
+    background-color: white;
+    border: 1px solid black;    
+    border-collapse: collapse;
+}
+#Reciepttable tr {
+    border: 1px solid black;
+    color: black;
+    background: rgb(236, 224, 190);
+}
+#Reciepttable,  #Reciepttable th, #Reciepttable td {
+    border: 1px solid black;
+}
+#Reciepttable td {
+    background: rgb(241, 240, 180);
+}
+
+div.center {
+    align-content: center;
+    
+}
+
+
+  /*#Password{
+      
+  }
+  #Email{
+    
+  }
+  .Button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(29, 6, 241);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
+}
+
+ 
+div.content {
+   
+    margin-left: auto;
+    margin-right: auto;
+
+} */
